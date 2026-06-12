@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- PROJECT 2: viewport meta — width=device-width, NO user-scalable=no (WCAG Accessible Zoom) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DecodeLabs — Frontend Development Internship Portfolio. Building semantic, accessible, and pixel-perfect web experiences." />
+  <title>DecodeLabs | Frontend Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <!-- PROJECT 2: Responsive Navigation using HTML Popover API — No JS Required -->
+  <header class="site-header">
+    <nav class="nav-container" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="HuzaifaDev Home">
+        <span class="logo-icon" aria-hidden="true">&lt;/&gt;</span>
+        <span class="logo-text">HuzaifaDev</span>
+      </a>
+
+      <!-- Desktop nav links (visible on tablet+) -->
+      <ul class="nav-links nav-links--desktop" role="list">
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#project"  class="nav-link">Project</a></li>
+        <li><a href="#concepts" class="nav-link">Concepts</a></li>
+        <li><a href="#responsive" class="nav-link">Responsive</a></li>
+        <li><a href="#checklist" class="nav-link">Checklist</a></li>
+        <li><a href="#gallery"  class="nav-link">Gallery</a></li>
+        <li><a href="#resources" class="nav-link">Resources</a></li>
+        <li><a href="#contact"  class="nav-link nav-link--cta">Contact</a></li>
+      </ul>
+
+      <!-- PROJECT 2: Hamburger button — triggers Popover API (no JS needed) -->
+      <!-- Touch target: min 44x44px per PDF Designing for Thumbs requirement -->
+      <button
+        class="nav-hamburger"
+        popovertarget="mobile-nav"
+        aria-label="Open navigation menu"
+        aria-haspopup="true"
+      >
+        <span class="hamburger-line" aria-hidden="true"></span>
+        <span class="hamburger-line" aria-hidden="true"></span>
+        <span class="hamburger-line" aria-hidden="true"></span>
+      </button>
+
+    </nav>
+  </header>
+
+  <!-- PROJECT 2: Popover Mobile Nav — No JS Required (HTML Popover API) -->
+  <div id="mobile-nav" class="mobile-nav" popover aria-label="Mobile navigation">
+    <!-- Close button inside popover -->
+    <button
+      class="mobile-nav__close"
+      popovertarget="mobile-nav"
+      popovertargetaction="hide"
+      aria-label="Close navigation menu"
+    >✕</button>
+
+    <nav aria-label="Mobile navigation links">
+      <ul class="mobile-nav__list" role="list">
+        <li><a href="#about"     class="mobile-nav__link" popovertarget="mobile-nav" popovertargetaction="hide">About</a></li>
+        <li><a href="#project"   class="mobile-nav__link" popovertarget="mobile-nav" popovertargetaction="hide">Project</a></li>
+        <li><a href="#concepts"  class="mobile-nav__link" popovertarget="mobile-nav" popovertargetaction="hide">Concepts</a></li>
+        <li><a href="#responsive" class="mobile-nav__link" popovertarget="mobile-nav" popovertargetaction="hide">Responsive</a></li>
+        <li><a href="#checklist" class="mobile-nav__link" popovertarget="mobile-nav" popovertargetaction="hide">Checklist</a></li>
+        <li><a href="#gallery"   class="mobile-nav__link" popovertarget="mobile-nav" popovertargetaction="hide">Gallery</a></li>
+        <li><a href="#resources" class="mobile-nav__link" popovertarget="mobile-nav" popovertargetaction="hide">Resources</a></li>
+        <li><a href="#contact"   class="mobile-nav__link mobile-nav__link--cta" popovertarget="mobile-nav" popovertargetaction="hide">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-content container">
+        <div class="hero-badge">
+          <span class="badge-dot" aria-hidden="true"></span>
+          Batch 2026 · Industrial Training Kit
+        </div>
+        <h1 id="hero-heading" class="hero-heading">
+          <span class="hero-heading__line">Frontend</span>
+          <span class="hero-heading__line hero-heading__line--accent">Development</span>
+          <span class="hero-heading__line">Project 1</span>
+        </h1>
+        <p class="hero-subtext">
+          Mastering the fundamental relationship between content and style. 
+          This is your structural phase — <em>Semantic Integrity</em> before complexity.
+        </p>
+        <div class="hero-actions">
+          <a href="#project" class="btn btn--primary">View Project Brief</a>
+          <a href="#checklist" class="btn btn--ghost">Flight Checklist</a>
+        </div>
+        <div class="hero-stats" role="list" aria-label="Key statistics">
+          <div class="stat-card" role="listitem">
+            <span class="stat-number">01</span>
+            <span class="stat-label">Project Phase</span>
+          </div>
+          <div class="stat-card" role="listitem">
+            <span class="stat-number">HTML</span>
+            <span class="stat-label">+ CSS</span>
+          </div>
+          <div class="stat-card" role="listitem">
+            <span class="stat-number">W3C</span>
+            <span class="stat-label">Validated</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span class="scroll-line"></span>
+        <span class="scroll-text">scroll</span>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT / WELCOME ===================== -->
+    <section id="about" class="section-about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="section-tag">Welcome to the Team 🚀</span>
+            <h2 id="about-heading" class="section-heading">Step into the Role of a Frontend Developer</h2>
+            <p class="about-body">
+              Project 1 is your structural phase: <strong>Static Webpage Design</strong>. This track isn't about complex animations — it's about Semantic Integrity. Before you build dynamic, data-driven applications, you must master the fundamental relationship between content and style.
+            </p>
+            <p class="about-body">
+              By completing this milestone, you prove you can craft a clean, readable layout through pure markup and styling logic. Let's design a digital foundation that presents information with absolute clarity.
+            </p>
+            <div class="about-pillars" role="list" aria-label="Core pillars">
+              <div class="pillar" role="listitem">
+                <span class="pillar-icon" aria-hidden="true">⬡</span>
+                <div>
+                  <h3 class="pillar-title">Semantic Integrity</h3>
+                  <p class="pillar-desc">Meaningful HTML that machines and humans both understand.</p>
+                </div>
+              </div>
+              <div class="pillar" role="listitem">
+                <span class="pillar-icon" aria-hidden="true">⬡</span>
+                <div>
+                  <h3 class="pillar-title">Visual Clarity</h3>
+                  <p class="pillar-desc">Clean, readable layouts with intentional spacing and hierarchy.</p>
+                </div>
+              </div>
+              <div class="pillar" role="listitem">
+                <span class="pillar-icon" aria-hidden="true">⬡</span>
+                <div>
+                  <h3 class="pillar-title">Structural Foundation</h3>
+                  <p class="pillar-desc">The bedrock every dynamic application is built upon.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="about-sidebar" aria-label="Qualification criteria">
+            <div class="sidebar-card">
+              <h3 class="sidebar-card__title">Earn Your Badge 🛡</h3>
+              <ul class="criteria-list" role="list">
+                <li class="criteria-item">
+                  <span class="criteria-icon" aria-hidden="true">✦</span>
+                  <div>
+                    <strong>Requirement:</strong> Complete Project 1 to unlock next week's projects.
+                  </div>
+                </li>
+                <li class="criteria-item">
+                  <span class="criteria-icon" aria-hidden="true">✦</span>
+                  <div>
+                    <strong>Standard:</strong> All projects must be verified for quality.
+                  </div>
+                </li>
+                <li class="criteria-item">
+                  <span class="criteria-icon" aria-hidden="true">✦</span>
+                  <div>
+                    <strong>Mandatory:</strong> Project 1 is the essential start for every intern.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECT BRIEF ===================== -->
+    <section id="project" class="section-project" aria-labelledby="project-heading">
+      <div class="container">
+        <div class="project-intro">
+          <span class="section-tag">Project 1</span>
+          <h2 id="project-heading" class="section-heading">Static Webpage Design 🎨</h2>
+          <p class="section-subtext">Your first milestone: build a pixel-perfect static foundation using pure HTML &amp; CSS.</p>
+        </div>
+        <div class="project-cards-grid">
+          <article class="project-card project-card--goal" aria-labelledby="goal-heading">
+            <div class="project-card__icon" aria-hidden="true">🎯</div>
+            <h3 id="goal-heading" class="project-card__title">Goal</h3>
+            <p class="project-card__body">Create a static webpage using HTML and CSS that demonstrates proper structure and clean visual design.</p>
+          </article>
+          <article class="project-card project-card--req" aria-labelledby="req-heading">
+            <div class="project-card__icon" aria-hidden="true">📋</div>
+            <h3 id="req-heading" class="project-card__title">Key Requirements</h3>
+            <ul class="project-card__list" role="list">
+              <li>Proper HTML structure &amp; semantics</li>
+              <li>Use of headings, sections, and images</li>
+              <li>Clean and readable layout</li>
+              <li>External CSS — no inline styles</li>
+            </ul>
+          </article>
+          <article class="project-card project-card--skills" aria-labelledby="skills-heading">
+            <div class="project-card__icon" aria-hidden="true">⚡</div>
+            <h3 id="skills-heading" class="project-card__title">Key Skills</h3>
+            <div class="skill-tags" role="list" aria-label="Skills required">
+              <span class="skill-tag" role="listitem">HTML Fundamentals</span>
+              <span class="skill-tag" role="listitem">CSS Styling</span>
+              <span class="skill-tag" role="listitem">Flexbox</span>
+              <span class="skill-tag" role="listitem">CSS Grid</span>
+              <span class="skill-tag" role="listitem">BEM Naming</span>
+              <span class="skill-tag" role="listitem">Accessibility</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CORE CONCEPTS ===================== -->
+    <section id="concepts" class="section-concepts" aria-labelledby="concepts-heading">
+      <div class="container">
+        <span class="section-tag">Engineering Mindset</span>
+        <h2 id="concepts-heading" class="section-heading">Core Concepts to Master</h2>
+        <p class="section-subtext">Every professional frontend developer internalizes these principles. Study them, apply them.</p>
+
+        <div class="concepts-grid">
+
+          <!-- IPO Model -->
+          <article class="concept-card" aria-labelledby="ipo-heading">
+            <div class="concept-card__number" aria-hidden="true">01</div>
+            <h3 id="ipo-heading" class="concept-card__title">The IPO Model</h3>
+            <p class="concept-card__desc">Input → Process → Output. Assets (images, text) go through CSS Engineering (Box Model, Logic) to produce a pixel-perfect render.</p>
+            <div class="concept-ipo" aria-label="IPO flow: Input to Process to Output">
+              <span class="ipo-step">Input</span>
+              <span class="ipo-arrow" aria-hidden="true">→</span>
+              <span class="ipo-step">Process</span>
+              <span class="ipo-arrow" aria-hidden="true">→</span>
+              <span class="ipo-step ipo-step--accent">Output</span>
+            </div>
+          </article>
+
+          <!-- IA: Structure Before Code -->
+          <article class="concept-card" aria-labelledby="ia-heading">
+            <div class="concept-card__number" aria-hidden="true">02</div>
+            <h3 id="ia-heading" class="concept-card__title">IA: Structure Before Code</h3>
+            <p class="concept-card__desc">Information Architecture — the art of organizing for findability. Define your logical sitemap before writing a single line of HTML.</p>
+            <div class="concept-tags" role="list">
+              <span class="concept-tag concept-tag--bad" role="listitem">❌ Entropy</span>
+              <span class="concept-tag concept-tag--good" role="listitem">✓ Order</span>
+            </div>
+          </article>
+
+          <!-- Semantic DOM -->
+          <article class="concept-card" aria-labelledby="sem-heading">
+            <div class="concept-card__number" aria-hidden="true">03</div>
+            <h3 id="sem-heading" class="concept-card__title">Semantic DOM</h3>
+            <p class="concept-card__desc">Replace "div soup" with meaningful tags. Semantic HTML gives explicit meaning to browsers, search engines, and screen readers.</p>
+            <div class="semantic-example" role="img" aria-label="Semantic HTML structure example">
+              <code class="code-block">&lt;header&gt; &lt;nav&gt; &lt;main&gt; &lt;article&gt; &lt;aside&gt; &lt;footer&gt;</code>
+            </div>
+          </article>
+
+          <!-- Document Hierarchy -->
+          <article class="concept-card" aria-labelledby="hier-heading">
+            <div class="concept-card__number" aria-hidden="true">04</div>
+            <h3 id="hier-heading" class="concept-card__title">Document Outline Hierarchy</h3>
+            <p class="concept-card__desc">ONE &lt;h1&gt; per page. Headings are structural keywords — never skip levels. Screen readers navigate via heading jumps.</p>
+            <div class="heading-hierarchy" aria-label="Heading hierarchy example">
+              <span class="hh hh--1">h1 — Page Topic</span>
+              <span class="hh hh--2">h2 — Major Section</span>
+              <span class="hh hh--3">h3 — Subsection</span>
+            </div>
+          </article>
+
+          <!-- CSS Separation of Concerns -->
+          <article class="concept-card" aria-labelledby="css-heading">
+            <div class="concept-card__number" aria-hidden="true">05</div>
+            <h3 id="css-heading" class="concept-card__title">CSS: Separation of Concerns</h3>
+            <p class="concept-card__desc">No inline styles. External CSS files only. One master stylesheet is easier to maintain than scattered style attributes on every element.</p>
+            <div class="concept-tags" role="list">
+              <span class="concept-tag concept-tag--bad" role="listitem">❌ style="color:red"</span>
+              <span class="concept-tag concept-tag--good" role="listitem">✓ master.css</span>
+            </div>
+          </article>
+
+          <!-- DRY Principle -->
+          <article class="concept-card" aria-labelledby="dry-heading">
+            <div class="concept-card__number" aria-hidden="true">06</div>
+            <h3 id="dry-heading" class="concept-card__title">The DRY Principle</h3>
+            <p class="concept-card__desc">Don't Repeat Yourself. Modular styling via BEM. A component defined once, used everywhere — like .button as a base with --primary as a modifier.</p>
+            <div class="semantic-example" role="img" aria-label="BEM naming example">
+              <code class="code-block">.button { padding: 1rem; }
+.button--primary { background: blue; }</code>
+            </div>
+          </article>
+
+          <!-- Layout Systems -->
+          <article class="concept-card" aria-labelledby="layout-heading">
+            <div class="concept-card__number" aria-hidden="true">07</div>
+            <h3 id="layout-heading" class="concept-card__title">Layout Systems</h3>
+            <p class="concept-card__desc">Use the right tool: <strong>CSS Grid</strong> for 2D macro page structure. <strong>Flexbox</strong> for 1D micro component alignment. They work together.</p>
+            <div class="concept-tags" role="list">
+              <span class="concept-tag concept-tag--grid" role="listitem">Grid — Page Structure</span>
+              <span class="concept-tag concept-tag--flex" role="listitem">Flex — Components</span>
+            </div>
+          </article>
+
+          <!-- Accessibility -->
+          <article class="concept-card" aria-labelledby="a11y-heading">
+            <div class="concept-card__number" aria-hidden="true">08</div>
+            <h3 id="a11y-heading" class="concept-card__title">A11Y: Accessibility Standards</h3>
+            <p class="concept-card__desc">Non-negotiable. Every image needs alt text. Contrast ratio must exceed 4.5:1. All interactive elements need accessible labels.</p>
+            <div class="concept-tags" role="list">
+              <span class="concept-tag concept-tag--good" role="listitem">Alt Text Required</span>
+              <span class="concept-tag concept-tag--good" role="listitem">Contrast &gt; 4.5:1</span>
+            </div>
+          </article>
+
+          <!-- Assets as Data -->
+          <article class="concept-card" aria-labelledby="assets-heading">
+            <div class="concept-card__number" aria-hidden="true">09</div>
+            <h3 id="assets-heading" class="concept-card__title">Assets as Data Objects</h3>
+            <p class="concept-card__desc">Always set explicit width and height on images to prevent Cumulative Layout Shift (CLS). The browser must reserve space before data arrives.</p>
+            <div class="concept-tags" role="list">
+              <span class="concept-tag concept-tag--good" role="listitem">AVIF — Best</span>
+              <span class="concept-tag concept-tag--grid" role="listitem">WebP — Fallback</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FLIGHT CHECKLIST ===================== -->
+    <section id="checklist" class="section-checklist" aria-labelledby="checklist-heading">
+      <div class="container">
+        <span class="section-tag">Quality Gate</span>
+        <h2 id="checklist-heading" class="section-heading">Project 1: Flight Checklist</h2>
+        <p class="section-subtext">Code does not ship until it passes every inspection point.</p>
+
+        <div class="checklist-grid">
+          <div class="checklist-item checklist-item--ia" role="listitem">
+            <div class="checklist-item__label">IA</div>
+            <div class="checklist-item__content">
+              <h3 class="checklist-item__title">Information Architecture</h3>
+              <p>Logical sitemap defined first. Structure before code.</p>
+            </div>
+            <span class="checklist-item__status" aria-label="Required">✦</span>
+          </div>
+
+          <div class="checklist-item checklist-item--html" role="listitem">
+            <div class="checklist-item__label">HTML</div>
+            <div class="checklist-item__content">
+              <h3 class="checklist-item__title">Semantic Tags</h3>
+              <p>Proper use of &lt;header&gt;, &lt;main&gt;, &lt;footer&gt;. One &lt;h1&gt; per page.</p>
+            </div>
+            <span class="checklist-item__status" aria-label="Required">✦</span>
+          </div>
+
+          <div class="checklist-item checklist-item--css" role="listitem">
+            <div class="checklist-item__label">CSS</div>
+            <div class="checklist-item__content">
+              <h3 class="checklist-item__title">External Files Only</h3>
+              <p>DRY principle applied. No IDs used for styling. Classes only.</p>
+            </div>
+            <span class="checklist-item__status" aria-label="Required">✦</span>
+          </div>
+
+          <div class="checklist-item checklist-item--layout" role="listitem">
+            <div class="checklist-item__label">LAYOUT</div>
+            <div class="checklist-item__content">
+              <h3 class="checklist-item__title">Grid + Flexbox</h3>
+              <p>Grid for macro page structure. Flexbox for micro component alignment.</p>
+            </div>
+            <span class="checklist-item__status" aria-label="Required">✦</span>
+          </div>
+
+          <div class="checklist-item checklist-item--assets" role="listitem">
+            <div class="checklist-item__label">ASSETS</div>
+            <div class="checklist-item__content">
+              <h3 class="checklist-item__title">Optimized Images</h3>
+              <p>AVIF/WebP formats with explicit width and height dimensions.</p>
+            </div>
+            <span class="checklist-item__status" aria-label="Required">✦</span>
+          </div>
+
+          <div class="checklist-item checklist-item--validation" role="listitem">
+            <div class="checklist-item__label">VALID</div>
+            <div class="checklist-item__content">
+              <h3 class="checklist-item__title">W3C + Lighthouse</h3>
+              <p>Pass W3C Validator with zero errors. Pass Lighthouse accessibility audit.</p>
+            </div>
+            <span class="checklist-item__status" aria-label="Required">✦</span>
+          </div>
+        </div>
+
+        <div class="quality-gate-banner" role="note" aria-label="Quality gate rules">
+          <div class="qg-rule">
+            <span class="qg-rule__num">1</span>
+            <div><strong>W3C Validation:</strong> Zero errors allowed.</div>
+          </div>
+          <div class="qg-rule">
+            <span class="qg-rule__num">2</span>
+            <div><strong>Semantic Audit:</strong> Proper landmarks (&lt;nav&gt;, &lt;main&gt;).</div>
+          </div>
+          <div class="qg-rule">
+            <span class="qg-rule__num">3</span>
+            <div><strong>Visual Regression:</strong> Pixel-perfect match to design.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY / IMAGES SECTION ===================== -->
+    <!-- PDF Requirement: "Use of headings, sections, and images"            -->
+    <!-- PDF Req: ASSETS — AVIF/WebP formats with explicit dimensions        -->
+    <section id="gallery" class="section-gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <span class="section-tag">Visual Assets</span>
+        <h2 id="gallery-heading" class="section-heading">Building the Visual Web 🖼</h2>
+        <p class="section-subtext">
+          Images are data objects — always use modern formats with explicit dimensions
+          to prevent Cumulative Layout Shift (CLS).
+        </p>
+
+        <!-- ── FEATURED IMAGE (large) ── -->
+        <div class="gallery-featured">
+          <figure class="gallery-figure gallery-figure--featured">
+            <picture>
+              <!-- WebP — modern browsers -->
+              <source
+                srcset="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&fm=webp&q=80"
+                type="image/webp"
+                width="1200"
+                height="630"
+              />
+              <!-- JPEG — fallback -->
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&fm=jpg&q=80"
+                alt="Developer typing code on a laptop — the core of frontend development"
+                width="1200"
+                height="630"
+                loading="eager"
+                class="gallery-img gallery-img--featured"
+              />
+            </picture>
+            <figcaption class="gallery-caption">
+              <span class="gallery-caption__tag">Featured</span>
+              Frontend Development in Action — Writing clean, semantic HTML &amp; CSS
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- ── IMAGE GRID (3 columns) ── -->
+        <div class="gallery-grid" role="list" aria-label="Frontend development concept images">
+
+          <figure class="gallery-figure" role="listitem">
+            <picture>
+              <source
+                srcset="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&fm=webp&q=80"
+                type="image/webp"
+                width="600"
+                height="400"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&fm=jpg&q=80"
+                alt="Code editor showing HTML and CSS — semantic structure on screen"
+                width="600"
+                height="400"
+                loading="lazy"
+                class="gallery-img"
+              />
+            </picture>
+            <figcaption class="gallery-caption">
+              <span class="gallery-caption__tag">HTML &amp; CSS</span>
+              Semantic structure — the skeleton of every webpage
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-figure" role="listitem">
+            <picture>
+              <source
+                srcset="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&fm=webp&q=80"
+                type="image/webp"
+                width="600"
+                height="400"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&fm=jpg&q=80"
+                alt="Designer sketching a website wireframe on paper — IA planning before code"
+                width="600"
+                height="400"
+                loading="lazy"
+                class="gallery-img"
+              />
+            </picture>
+            <figcaption class="gallery-caption">
+              <span class="gallery-caption__tag">Information Architecture</span>
+              Plan your sitemap before writing a single tag
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-figure" role="listitem">
+            <picture>
+              <source
+                srcset="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&fm=webp&q=80"
+                type="image/webp"
+                width="600"
+                height="400"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&fm=jpg&q=80"
+                alt="Multiple browser windows showing responsive layouts — CSS Grid and Flexbox in action"
+                width="600"
+                height="400"
+                loading="lazy"
+                class="gallery-img"
+              />
+            </picture>
+            <figcaption class="gallery-caption">
+              <span class="gallery-caption__tag">Layout Systems</span>
+              CSS Grid for structure, Flexbox for alignment
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-figure" role="listitem">
+            <picture>
+              <source
+                srcset="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&fm=webp&q=80"
+                type="image/webp"
+                width="600"
+                height="400"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&fm=jpg&q=80"
+                alt="Accessibility checklist on a screen — WCAG guidelines for inclusive design"
+                width="600"
+                height="400"
+                loading="lazy"
+                class="gallery-img"
+              />
+            </picture>
+            <figcaption class="gallery-caption">
+              <span class="gallery-caption__tag">Accessibility (A11Y)</span>
+              Alt text, contrast ratios &amp; ARIA labels — non-negotiable
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-figure" role="listitem">
+            <picture>
+              <source
+                srcset="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&fm=webp&q=80"
+                type="image/webp"
+                width="600"
+                height="400"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&fm=jpg&q=80"
+                alt="Team working together on laptops — collaborative frontend development at DecodeLabs"
+                width="600"
+                height="400"
+                loading="lazy"
+                class="gallery-img"
+              />
+            </picture>
+            <figcaption class="gallery-caption">
+              <span class="gallery-caption__tag">Team &amp; Collaboration</span>
+              Building real projects with DecodeLabs Batch 2026
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-figure" role="listitem">
+            <picture>
+              <source
+                srcset="https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?w=600&fm=webp&q=80"
+                type="image/webp"
+                width="600"
+                height="400"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?w=600&fm=jpg&q=80"
+                alt="Browser developer tools open — inspecting CSS box model and layout"
+                width="600"
+                height="400"
+                loading="lazy"
+                class="gallery-img"
+              />
+            </picture>
+            <figcaption class="gallery-caption">
+              <span class="gallery-caption__tag">DevTools</span>
+              Inspect, debug, and fix — the developer's best friend
+            </figcaption>
+          </figure>
+
+        </div>
+
+        <!-- ── ASSET FORMAT INFO BAR ── -->
+        <div class="asset-infobar" role="note" aria-label="Image format best practices">
+          <div class="asset-infobar__item asset-infobar__item--avif">
+            <span class="asset-infobar__icon" aria-hidden="true">✦</span>
+            <div>
+              <strong>AVIF</strong>
+              <span>Superior compression + HDR. Best choice for modern browsers.</span>
+            </div>
+          </div>
+          <div class="asset-infobar__item asset-infobar__item--webp">
+            <span class="asset-infobar__icon" aria-hidden="true">✦</span>
+            <div>
+              <strong>WebP</strong>
+              <span>Universal fallback. Smaller than JPEG with better quality.</span>
+            </div>
+          </div>
+          <div class="asset-infobar__item asset-infobar__item--rule">
+            <span class="asset-infobar__icon" aria-hidden="true">⚠</span>
+            <div>
+              <strong>Always set width &amp; height</strong>
+              <span>Prevents CLS — browser reserves space before image loads.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== PROJECT 2 BRIEF ===================== -->
+    <!-- PDF 2 Page 4: Goal, Key Requirements, Key Skills -->
+    <section id="project2" class="section-project section-project--p2" aria-labelledby="project2-heading">
+      <div class="container">
+        <div class="project-intro">
+          <span class="section-tag">Project 2</span>
+          <h2 id="project2-heading" class="section-heading">Responsive Web Layout 📱</h2>
+          <p class="section-subtext">Your second milestone: build a webpage that gracefully adapts from mobile screens to desktop monitors.</p>
+        </div>
+        <div class="project-cards-grid">
+          <article class="project-card project-card--goal" aria-labelledby="goal2-heading">
+            <div class="project-card__icon" aria-hidden="true">🎯</div>
+            <h3 id="goal2-heading" class="project-card__title">Goal</h3>
+            <p class="project-card__body">Build a responsive webpage that works seamlessly across different screen sizes — mobile, tablet, and desktop.</p>
+          </article>
+          <article class="project-card project-card--req" aria-labelledby="req2-heading">
+            <div class="project-card__icon" aria-hidden="true">📋</div>
+            <h3 id="req2-heading" class="project-card__title">Key Requirements</h3>
+            <ul class="project-card__list" role="list">
+              <li>Use CSS media queries (mobile-first)</li>
+              <li>Responsive navigation (Popover / hamburger)</li>
+              <li>Proper spacing and alignment</li>
+              <li>Fluid units &amp; typography with clamp()</li>
+            </ul>
+          </article>
+          <article class="project-card project-card--skills" aria-labelledby="skills2-heading">
+            <div class="project-card__icon" aria-hidden="true">⚡</div>
+            <h3 id="skills2-heading" class="project-card__title">Key Skills</h3>
+            <div class="skill-tags" role="list" aria-label="Skills required">
+              <span class="skill-tag" role="listitem">Responsive Design</span>
+              <span class="skill-tag" role="listitem">Media Queries</span>
+              <span class="skill-tag" role="listitem">Mobile-First CSS</span>
+              <span class="skill-tag" role="listitem">Fluid Typography</span>
+              <span class="skill-tag" role="listitem">Popover API</span>
+              <span class="skill-tag" role="listitem">Touch Accessibility</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECT 2: RESPONSIVE CONCEPTS ===================== -->
+    <section id="responsive" class="section-responsive" aria-labelledby="resp-heading">
+      <div class="container">
+        <span class="section-tag">Project 2 — Responsive Web Layout</span>
+        <h2 id="resp-heading" class="section-heading">The Art of Fluidity 📱</h2>
+        <p class="section-subtext">Content is like water — it must adapt to any container. Master these responsive techniques to build layouts that work on every device.</p>
+
+        <!-- Concept cards grid — auto-fit minmax (PDF CSS Grid requirement) -->
+        <div class="resp-grid">
+
+          <article class="resp-card resp-card--1" aria-labelledby="rc1">
+            <div class="resp-card__icon" aria-hidden="true">🔑</div>
+            <h3 id="rc1" class="resp-card__title">Viewport Meta Tag</h3>
+            <p class="resp-card__desc">The key to the kingdom. Without it, mobile browsers render at 980px virtual width — breaking your layout completely.</p>
+            <code class="resp-card__code">&lt;meta name="viewport"
+  content="width=device-width,
+  initial-scale=1.0"&gt;</code>
+          </article>
+
+          <article class="resp-card resp-card--2" aria-labelledby="rc2">
+            <div class="resp-card__icon" aria-hidden="true">📐</div>
+            <h3 id="rc2" class="resp-card__title">Mobile-First Strategy</h3>
+            <p class="resp-card__desc">Write base CSS for mobile first. Use <code>min-width</code> media queries to add complexity as screen space increases.</p>
+            <code class="resp-card__code">/* Mobile base CSS first */
+@media (min-width: 768px) {
+  /* Tablet enhancements */
+}
+@media (min-width: 1024px) {
+  /* Desktop layout */
+}</code>
+          </article>
+
+          <article class="resp-card resp-card--3" aria-labelledby="rc3">
+            <div class="resp-card__icon" aria-hidden="true">💧</div>
+            <h3 id="rc3" class="resp-card__title">Fluid Units</h3>
+            <p class="resp-card__desc">Use <code>%</code>, <code>rem</code>, <code>vw</code>, <code>fr</code> instead of fixed <code>px</code>. Fluid units stretch and shrink naturally with the viewport.</p>
+            <div class="fluid-units-demo" aria-label="Fluid units example">
+              <span class="fu-tag fu-tag--rem">rem</span>
+              <span class="fu-tag fu-tag--vw">vw</span>
+              <span class="fu-tag fu-tag--pct">%</span>
+              <span class="fu-tag fu-tag--fr">fr</span>
+            </div>
+          </article>
+
+          <article class="resp-card resp-card--4" aria-labelledby="rc4">
+            <div class="resp-card__icon" aria-hidden="true">🔤</div>
+            <h3 id="rc4" class="resp-card__title">Fluid Typography</h3>
+            <p class="resp-card__desc">Use <code>clamp()</code> for font sizes that scale smoothly between a min and max — no stepped media queries needed.</p>
+            <code class="resp-card__code">font-size: clamp(
+  1rem,    /* min */
+  2.5vw,   /* fluid */
+  2rem     /* max */
+);</code>
+          </article>
+
+          <article class="resp-card resp-card--5" aria-labelledby="rc5">
+            <div class="resp-card__icon" aria-hidden="true">♟</div>
+            <h3 id="rc5" class="resp-card__title">CSS Grid Auto-Fit</h3>
+            <p class="resp-card__desc">Let Grid automatically fit as many columns as possible — responsive without a single media query.</p>
+            <code class="resp-card__code">grid-template-columns:
+  repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  );</code>
+          </article>
+
+          <article class="resp-card resp-card--6" aria-labelledby="rc6">
+            <div class="resp-card__icon" aria-hidden="true">☰</div>
+            <h3 id="rc6" class="resp-card__title">Hamburger Navigation</h3>
+            <p class="resp-card__desc">On mobile, hide the nav links and show a hamburger menu. This page uses the HTML <strong>Popover API</strong> — zero JavaScript required!</p>
+            <div class="concept-tags" role="list">
+              <span class="concept-tag concept-tag--good" role="listitem">✓ Popover API</span>
+              <span class="concept-tag concept-tag--good" role="listitem">✓ No JS</span>
+            </div>
+          </article>
+
+          <article class="resp-card resp-card--7" aria-labelledby="rc7">
+            <div class="resp-card__icon" aria-hidden="true">👍</div>
+            <h3 id="rc7" class="resp-card__title">Designing for Thumbs</h3>
+            <p class="resp-card__desc">All touch targets must be at least <strong>44×44px</strong>. Fingers are less precise than mouse cursors — give them room.</p>
+            <div class="touch-target-demo" aria-label="Touch target size demonstration">
+              <div class="touch-target" role="img" aria-label="44x44px minimum touch target">
+                <span>44px</span>
+              </div>
+              <p class="touch-target__label">Minimum touch target</p>
+            </div>
+          </article>
+
+          <article class="resp-card resp-card--8" aria-labelledby="rc8">
+            <div class="resp-card__icon" aria-hidden="true">🔍</div>
+            <h3 id="rc8" class="resp-card__title">Accessible Zoom</h3>
+            <p class="resp-card__desc">Never use <code>user-scalable=no</code>. WCAG requires users to zoom up to 500%. Restricting zoom fails accessibility standards.</p>
+            <div class="concept-tags" role="list">
+              <span class="concept-tag concept-tag--bad" role="listitem">❌ user-scalable=no</span>
+              <span class="concept-tag concept-tag--good" role="listitem">✓ Allow 500% zoom</span>
+            </div>
+          </article>
+
+          <article class="resp-card resp-card--9" aria-labelledby="rc9">
+            <div class="resp-card__icon" aria-hidden="true">🌉</div>
+            <h3 id="rc9" class="resp-card__title">Breakpoints are Bridges</h3>
+            <p class="resp-card__desc">Design for content breakage, not device models. Set breakpoints where your content breaks — at 480px, 768px, and 1024px.</p>
+            <div class="breakpoints-demo" role="img" aria-label="Breakpoint sizes">
+              <span class="bp bp--sm">480px</span>
+              <span class="bp bp--md">768px</span>
+              <span class="bp bp--lg">1024px</span>
+            </div>
+          </article>
+
+          <article class="resp-card resp-card--10" aria-labelledby="rc10">
+            <div class="resp-card__icon" aria-hidden="true">🏛</div>
+            <h3 id="rc10" class="resp-card__title">Architectural Harmony</h3>
+            <p class="resp-card__desc"><strong>Grid is the House</strong> — header, sidebar, main, footer. <strong>Flexbox is the Furniture</strong> — image, text, and button inside each card. Together they build the room.</p>
+            <div class="harmony-demo" aria-label="Grid and Flexbox working together">
+              <div class="harmony-demo__header">Header — Grid</div>
+              <div class="harmony-demo__body">
+                <div class="harmony-demo__sidebar">Sidebar</div>
+                <div class="harmony-demo__main">
+                  <span class="harmony-demo__card">Flex</span>
+                  <span class="harmony-demo__card">Flex</span>
+                  <span class="harmony-demo__card">Flex</span>
+                </div>
+              </div>
+              <div class="harmony-demo__footer">Footer — Grid</div>
+            </div>
+          </article>
+
+          <article class="resp-card resp-card--11" aria-labelledby="rc11">
+            <div class="resp-card__icon" aria-hidden="true">🚀</div>
+            <h3 id="rc11" class="resp-card__title">Future-Proofing: Container Queries</h3>
+            <p class="resp-card__desc">Beyond the viewport — components respond to their <em>container's</em> size, not the screen's. Coding for the device that hasn't been invented yet.</p>
+            <code class="resp-card__code">.card {
+  container-type: inline-size;
+}
+@container (min-width: 300px) {
+  .card__title { font-size: 1.25rem; }
+}</code>
+          </article>
+
+          <article class="resp-card resp-card--12" aria-labelledby="rc12">
+            <div class="resp-card__icon" aria-hidden="true">♜</div>
+            <h3 id="rc12" class="resp-card__title">Flexbox: One-Dimensional Specialist</h3>
+            <p class="resp-card__desc">Flexbox arranges items along a single axis. Switch <code>flex-direction</code> from <code>row</code> to <code>column</code> at a breakpoint to reflow components for smaller screens.</p>
+            <div class="flex-direction-demo" aria-label="Flex direction row vs column">
+              <div class="flex-demo flex-demo--row" role="img" aria-label="flex-direction: row">
+                <span></span><span></span><span></span>
+                <small>row</small>
+              </div>
+              <div class="flex-demo flex-demo--column" role="img" aria-label="flex-direction: column">
+                <span></span><span></span><span></span>
+                <small>column</small>
+              </div>
+            </div>
+            <code class="resp-card__code">display: flex;
+justify-content: center;
+align-items: center;</code>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECT 2: IMPLEMENTATION CHECKLIST ===================== -->
+    <!-- PDF 2 Page 17 -->
+    <section id="checklist2" class="section-checklist section-checklist--p2" aria-labelledby="checklist2-heading">
+      <div class="container">
+        <span class="section-tag">Project 2 — Quality Gate</span>
+        <h2 id="checklist2-heading" class="section-heading">Implementation Checklist</h2>
+        <p class="section-subtext">Six checkpoints every responsive layout must pass before shipping.</p>
+
+        <div class="checklist-grid">
+          <div class="checklist-item checklist-item--ia" role="listitem">
+            <div class="checklist-item__label">META</div>
+            <div class="checklist-item__content">
+              <h3 class="checklist-item__title">Viewport Meta Tag</h3>
+              <p><code>width=device-width, initial-scale=1.0</code> — no scale restrictions.</p>
+            </div>
+            <span class="checklist-item__status" aria-label="Required">✦</span>
+          </div>
+
+          <div class="checklist-item checklist-item--html" role="listitem">
+            <div class="checklist-item__label">CSS</div>
+            <div class="checklist-item__content">
+              <h3 class="checklist-item__title">Mobile-First Base CSS</h3>
+              <p>Base styles target mobile. <code>min-width</code> media queries add complexity upward.</p>
+            </div>
+            <span class="checklist-item__status" aria-label="Required">✦</span>
+          </div>
+
+          <div class="checklist-item checklist-item--layout" role="listitem">
+            <div class="checklist-item__label">LAYOUT</div>
+            <div class="checklist-item__content">
+              <h3 class="checklist-item__title">Grid (Macro) &amp; Flexbox (Micro)</h3>
+              <p>Grid builds the page skeleton. Flexbox aligns content inside each component.</p>
+            </div>
+            <span class="checklist-item__status" aria-label="Required">✦</span>
+          </div>
+
+          <div class="checklist-item checklist-item--css" role="listitem">
+            <div class="checklist-item__label">UNITS</div>
+            <div class="checklist-item__content">
+              <h3 class="checklist-item__title">Fluid Units (%, rem, vw)</h3>
+              <p>No fixed pixel widths on layout containers. Typography scales with <code>clamp()</code>.</p>
+            </div>
+            <span class="checklist-item__status" aria-label="Required">✦</span>
+          </div>
+
+          <div class="checklist-item checklist-item--assets" role="listitem">
+            <div class="checklist-item__label">NAV</div>
+            <div class="checklist-item__content">
+              <h3 class="checklist-item__title">Hamburger / Popover Navigation</h3>
+              <p>Mobile menu collapses behind a hamburger trigger using the native Popover API.</p>
+            </div>
+            <span class="checklist-item__status" aria-label="Required">✦</span>
+          </div>
+
+          <div class="checklist-item checklist-item--validation" role="listitem">
+            <div class="checklist-item__label">A11Y</div>
+            <div class="checklist-item__content">
+              <h3 class="checklist-item__title">Touch Targets &amp; Zoom</h3>
+              <p>All interactive elements ≥ 44×44px. Pinch-zoom up to 500% never blocked.</p>
+            </div>
+            <span class="checklist-item__status" aria-label="Required">✦</span>
+          </div>
+        </div>
+
+        <div class="quality-gate-banner" role="note" aria-label="Project 2 quality gate rules">
+          <div class="qg-rule">
+            <span class="qg-rule__num">1</span>
+            <div><strong>Resize Test:</strong> 320px → 1440px with zero horizontal scroll.</div>
+          </div>
+          <div class="qg-rule">
+            <span class="qg-rule__num">2</span>
+            <div><strong>Breakpoint Audit:</strong> Layout adapts cleanly at 480 / 768 / 1024px.</div>
+          </div>
+          <div class="qg-rule">
+            <span class="qg-rule__num">3</span>
+            <div><strong>Lighthouse:</strong> Mobile usability score ≥ 95.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RESOURCES & Q&A ===================== -->
+    <!-- PDF 2 Page 19 -->
+    <section id="resources" class="section-resources" aria-labelledby="resources-heading">
+      <div class="container">
+        <span class="section-tag">Keep Learning</span>
+        <h2 id="resources-heading" class="section-heading">Resources &amp; Q&amp;A 📚</h2>
+        <p class="section-subtext">Bookmark these — they'll answer 90% of your responsive design questions.</p>
+
+        <div class="resources-grid">
+          <div class="resource-group">
+            <h3 class="resource-group__title">// Documentation</h3>
+            <ul class="resource-list" role="list">
+              <li class="resource-item">
+                <span class="resource-item__icon" aria-hidden="true">→</span>
+                <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer" class="resource-link">MDN Web Docs</a>
+                <span class="resource-item__desc">The definitive reference for HTML, CSS &amp; JS.</span>
+              </li>
+              <li class="resource-item">
+                <span class="resource-item__icon" aria-hidden="true">→</span>
+                <a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer" class="resource-link">CSS-Tricks</a>
+                <span class="resource-item__desc">Practical guides on Flexbox, Grid &amp; layout patterns.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="resource-group">
+            <h3 class="resource-group__title">// Tools</h3>
+            <ul class="resource-list" role="list">
+              <li class="resource-item">
+                <span class="resource-item__icon" aria-hidden="true">→</span>
+                <a href="https://utopia.fyi/type/calculator/" target="_blank" rel="noopener noreferrer" class="resource-link">Fluid Type Scale Calculator</a>
+                <span class="resource-item__desc">Generate <code>clamp()</code> values for fluid typography.</span>
+              </li>
+              <li class="resource-item">
+                <span class="resource-item__icon" aria-hidden="true">→</span>
+                <a href="https://caniuse.com/" target="_blank" rel="noopener noreferrer" class="resource-link">CanIUse.com</a>
+                <span class="resource-item__desc">Check browser support before using a new CSS feature.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MANDATE / CLOSING ===================== -->
+    <section class="section-mandate" aria-labelledby="mandate-heading">
+      <div class="container">
+        <div class="mandate-content">
+          <blockquote class="mandate-quote">
+            <p id="mandate-heading">"Build it well, for the frontend is the only part of the system the world will ever see."</p>
+            <footer class="mandate-attribution">— DecodeLabs Engineering Foundations</footer>
+          </blockquote>
+          <div class="mandate-conclusion">
+            <p>The absolute best way to master Frontend Development is through <strong>hands-on practice</strong>, not just theory. Take projects one by one, experiment with unique solutions, and treat every alignment issue as a learning opportunity.</p>
+            <p>As you build these milestones at DecodeLabs, you are creating a real-world portfolio that showcases your design-to-code skills to future employers.</p>
+            <a href="#project" class="btn btn--primary">Start Building Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="contact" class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo" aria-label="DecodeLabs Home">
+            <span class="logo-icon" aria-hidden="true">&lt;/&gt;</span>
+            <span class="logo-text">DecodeLabs</span>
+          </a>
+          <p class="footer-tagline">Engineering Foundations · Batch 2026</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h3 class="footer-nav__title">Navigation</h3>
+          <ul role="list">
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#project" class="footer-link">Project 1</a></li>
+            <li><a href="#concepts" class="footer-link">Concepts</a></li>
+            <li><a href="#project2" class="footer-link">Project 2</a></li>
+            <li><a href="#responsive" class="footer-link">Responsive</a></li>
+            <li><a href="#checklist" class="footer-link">Checklist</a></li>
+            <li><a href="#gallery" class="footer-link">Gallery</a></li>
+            <li><a href="#resources" class="footer-link">Resources</a></li>
+          </ul>
+        </nav>
+        <address class="footer-contact">
+          <h3 class="footer-nav__title">Contact</h3>
+          <ul role="list">
+            <li><a href="tel:+918933006408" class="footer-link">+91 89330 06408</a></li>
+            <li><a href="mailto:decodelabs.tech@gmail.com" class="footer-link">decodelabs.tech@gmail.com</a></li>
+            <li><a href="https://www.decodelabs.tech" class="footer-link" target="_blank" rel="noopener noreferrer">www.decodelabs.tech</a></li>
+            <li class="footer-location">📍 Greater Lucknow, India</li>
+          </ul>
+        </address>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 DecodeLabs. Industrial Training Kit · Frontend Development Project 1 &amp; Project 2.</p>
+        <p class="footer-mono">Built with &lt;HTML&gt; + CSS · Mobile-First · No frameworks · Pure craft.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
