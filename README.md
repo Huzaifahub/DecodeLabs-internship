@@ -77,6 +77,17 @@ Then just open `index.html`.
 ---
 
 ## Screenshots
+
+## Registration Page
+<img width="373" height="772" alt="image" src="https://github.com/user-attachments/assets/ebac3da2-41a7-40bf-b246-c3f7d2f3d94c" />
+
+
+<img width="607" height="790" alt="image" src="https://github.com/user-attachments/assets/4be30cf6-b2da-4f1d-bc2a-1d30b7b2d88c" />
+
+
+<img width="652" height="507" alt="image" src="https://github.com/user-attachments/assets/1cfe2dbd-cb83-4747-83f6-b5a4a3127661" />
+
+
 <img width="1915" height="850" alt="image" src="https://github.com/user-attachments/assets/55b87f78-7274-4144-8d22-73915f840dd3" />
 
 ## About
